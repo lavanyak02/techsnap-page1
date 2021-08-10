@@ -37,7 +37,38 @@
   font-weight: bold;
 }
 .label .ball {
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.411);
+  border-radius: 30px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  height: 11px;
+  width: 25px;
+  transform: translateX(29px);
+  transition: transform 0.2s linear;
+}
+.dark-mode .label {
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.75rem;
+  position: relative;
+  height: 15px;
+  width: 60px;
+  transform: scale(1.2);
+}
+.dark-mode .label span {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 0.58rem;
+  font-weight: bold;
+}
+.dark-mode .label .ball {
+  background-color: rgba(20, 16, 16, 0.671);
   border-radius: 30px;
   position: absolute;
   top: 2px;
@@ -59,9 +90,7 @@
 .fa-sun {
   color: #f39c12;
 }
-.dark-mode .label {
-  background-color: rgba(229, 229, 229, 0.4);
-}
+
 /*-----------------------------------------------------------------*/
 /* Fun Facs
 /*-----------------------------------------------------------------*/
@@ -134,13 +163,13 @@ section {
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 50px;
-  padding: 29px 10px 20px;
+  padding: 27px 8px 20px;
   border-radius: 9px;
 }
 .dark-mode .services-box {
   text-align: center;
   margin-bottom: 50px;
-  padding: 29px 10px 20px;
+  padding: 27px 8px 20px;
   background-color: rgba(240, 238, 255, 0.1);
   border-radius: 9px;
 }
@@ -220,7 +249,7 @@ section {
   width: 80px;
   height: 80px;
   color: #fff;
-  font-size: 38px;
+  font-size: 37px;
   line-height: 80px;
   border-radius: 50%;
   display: inline-block;
@@ -236,11 +265,17 @@ section {
   margin: 31px 0px 20px;
 }
 .services-desc p {
-  height:180px;
+  text-align:center;
+  height:190px;
   color: #575051;
 }
 .dark-mode .services-desc p {
   color: #a9a9a9;
+}
+
+
+.dark-mode .signup__container{
+  background-color: black;
 }
 
 /*-----------------------------------------------------------------*/
@@ -386,19 +421,53 @@ ul.timeline {
     left: -60px;
   }
 }
-@media (max-width: 440px) {
-  .wrapper .center-line,
-  .row section::before,
-  .row section .icon {
-    display: none;
+@media (max-width: 580px) {
+  .animated .animated-item{
+   display: inline;
+   font-size:25px;
+
   }
+}
+@media (max-width: 440px) {
+  .wrapper .center-line {
+    height: 100%;
+    width: 4px;
+    background: #fff;
+    left: 0%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+  .row section .icon,
+.center-line .scroll-icon {
+  left: -10%;
+  background: #f2f2f2;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ff7979;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  font-size: 20px;
+  transform: translateX(-50%);
+}
   .wrapper .row {
     margin: 10px 0;
   }
 }
-
+.services-desc p {
+  text-align:center;
+  height:210px;
+  color: #575051;
+}
 .signup_card .parent {
-  background-color: white;
+  background-color: black;
   display: inline-block;
   margin: 25px 0;
   border-radius: 7px;
@@ -407,9 +476,29 @@ ul.timeline {
   text-align: center;
   font-size: 25px;
   margin: 20px;
-  color: #0c0c0d;
+  color: white;
 }
-
+.signup__container{
+  background-color: white;
+}
+.dark-mode .signup_card  .parent{
+  background-color: white;
+}
+.dark-mode .signup_card  .holder .parent h3 {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+  color: black;
+}
+.dark-mode .signup_card span{
+  color: black;
+}
+.dark-mode .signup_card label{
+  color: black;
+}
+.signup_card span,label{
+  color: white;
+}
 .social {
   text-align: center;
 }
@@ -433,9 +522,7 @@ ul.timeline {
   transition: 0.5s;
 }
 
-.signup__container {
-  background-color: #0c0c0d;
-}
+
 
 .underline__or {
   box-sizing: border-box;
@@ -459,8 +546,8 @@ ul.timeline {
   width: 100%;
 }
 
-.underline__or::after {
-  background-color: #e5e1da;
+.dark-mode .underline__or::after {
+  background-color: black;
   content: "";
   height: 1px;
   left: 0;
