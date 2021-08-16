@@ -25,7 +25,7 @@
   justify-content: space-around;
   font-size: 0.75rem;
   position: relative;
-  height: 15px;
+  height: 19px;
   width: 60px;
   transform: scale(1.2);
 }
@@ -40,11 +40,11 @@
   background-color: rgba(255, 255, 255, 0.411);
   border-radius: 30px;
   position: absolute;
-  top: 2px;
-  left: 3px;
-  height: 11px;
-  width: 25px;
-  transform: translateX(29px);
+  top: 0px;
+  left: 0px;
+  height: 18px;
+  width: 30px;
+  transform: translateX(30px);
   transition: transform 0.2s linear;
 }
 .dark-mode .label {
@@ -56,7 +56,7 @@
   justify-content: space-around;
   font-size: 0.75rem;
   position: relative;
-  height: 15px;
+  height: 19px;
   width: 60px;
   transform: scale(1.2);
 }
@@ -71,11 +71,9 @@
   background-color: rgba(20, 16, 16, 0.671);
   border-radius: 30px;
   position: absolute;
-  top: 2px;
-  left: 3px;
-  height: 11px;
-  width: 25px;
-  transform: translateX(29px);
+  height: 18px;
+  width: 29px;
+  transform: translateX(30px);
   transition: transform 0.2s linear;
 }
 
@@ -265,7 +263,9 @@ section {
   margin: 31px 0px 20px;
 }
 .services-desc p {
-  text-align:center;
+  display: flex;
+  align-content: center;
+  text-align:left;
   height:190px;
   color: #575051;
 }
@@ -433,13 +433,13 @@ ul.timeline {
     height: 100%;
     width: 4px;
     background: #fff;
-    left: 0%;
+    left: 3%;
     top: 20px;
     transform: translateX(-50%);
   }
   .row section .icon,
 .center-line .scroll-icon {
-  left: -10%;
+  left: -7%;
   background: #f2f2f2;
   height: 20px;
   width: 20px;
@@ -459,10 +459,11 @@ ul.timeline {
 }
   .wrapper .row {
     margin: 10px 0;
+   
   }
 }
 .services-desc p {
-  text-align:center;
+  text-align:left;
   height:210px;
   color: #575051;
 }
