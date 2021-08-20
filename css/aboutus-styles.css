@@ -26,7 +26,7 @@
   font-size: 0.75rem;
   position: relative;
   height: 19px;
-  width: 60px;
+  width: 63px;
   transform: scale(1.2);
 }
 .label span {
@@ -43,7 +43,7 @@
   top: 2%;
   left: 0px;
   height: 18px;
-  width: 30px;
+  width: 32px;
   transform: translateX(30px);
   transition: transform 0.2s linear;
 }
@@ -89,7 +89,16 @@
 .fa-sun {
   color: #f39c12;
 }
+.dark-mode .label {
+  background-color: rgba(229, 229, 229, 0.4);
+}
 
+.dark-mode .signup__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: black;
+}
 /*-----------------------------------------------------------------*/
 /* Fun Facts
 /*-----------------------------------------------------------------*/
@@ -278,6 +287,11 @@ section {
 .dark-mode .signup__container{
   background-color: black;
 }
+
+
+
+
+
 
 /*-----------------------------------------------------------------*/
 /* History
@@ -473,52 +487,29 @@ ul.timeline {
   height:210px;
   color: #575051;
 }
+
 .signup_card .parent {
-  background-color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  background-color: white;
+  text-align: left;
   display: inline-block;
-  margin: 25px 0;
+  margin: 25px 25px;
   border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .holder .parent h3 {
   text-align: center;
   font-size: 25px;
   margin: 20px;
-  color: white;
+  color: #0c0c0d;
 }
-.signup__container{
-  background-color: white;
-}
-.dark-mode .signup_card  .parent{
-  background-color: white;
-}
-.dark-mode .signup_card  .holder .parent h3 {
-  text-align: center;
-  font-size: 25px;
-  margin: 20px;
-  color: black;
-}
-.dark-mode .signup_card span{
-  color: black;
-}
-.dark-mode .signup_card label{
-  color: black;
-}
-.signup_card span,label{
-  color: white;
-}
+
 .social {
   text-align: center;
 }
-.social .fa-facebook-f {
-  color: #3b5998;
-  display: inline-block;
-  font-size: 1.2rem;
-}
-.social .fa-linkedin {
-  color: #0e76a8;
-  display: inline-block;
-  font-size: 1.2rem;
-}
+
 .social .fa-google-plus-g {
   color: #db4437;
   display: inline-block;
@@ -529,7 +520,12 @@ ul.timeline {
   transition: 0.5s;
 }
 
-
+.signup__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: white;
+}
 
 .underline__or {
   box-sizing: border-box;
@@ -538,7 +534,7 @@ ul.timeline {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-top: 0;
-  margin-top: 10px;
+  margin-top: 9px;
   position: relative;
   text-align: center;
 }
@@ -553,8 +549,8 @@ ul.timeline {
   width: 100%;
 }
 
-.dark-mode .underline__or::after {
-  background-color: black;
+.underline__or::after {
+  background-color: #e5e1da;
   content: "";
   height: 1px;
   left: 0;
